@@ -1,6 +1,8 @@
-version: '2'
+version: '3.3'
+
 services:
-  postgres:
+  fastfeet-api:
+    container_name: 'fastfeet-api'
     image: 'postgres:9.6-alpine'
     environment:
       - POSTGRES_USER=fastfeet
