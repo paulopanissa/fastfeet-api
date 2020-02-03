@@ -1,0 +1,9 @@
+version: '2'
+services:
+  postgres:
+    image: 'postgres:9.6-alpine'
+    environment:
+      - POSTGRES_USER=fastfeet
+      - POSTGRES_PASSWORD=fastfeet
+    ports:
+      - '20002:5432'

@@ -1,0 +1,12 @@
+#IDE
+.idea
+.vscode
+# logs and npm
+yarn-error.log
+package-error.log
+package-lock.json
+#env
+.env
+#directory
+node_modules
+tmp
