@@ -5,6 +5,7 @@ import authMiddleware from './app/middlewares/auth';
 import SessionController from './app/controllers/SessionController';
 import ProfileController from './app/controllers/ProfileController';
 import UserController from './app/controllers/UserController';
+import RecipientController from './app/controllers/RecipientController';
 
 const routes = new Router();
 
@@ -42,5 +43,12 @@ routes.delete('/users/:id', UserController.destroy);
 // Profile
 routes.get('/profile', ProfileController.show);
 routes.put('/profile', ProfileController.update);
+
+// Recipient
+routes.get('/recipients', RecipientController.index);
+routes.get('/recipients/:id', RecipientController.show);
+routes.post('/recipients', RecipientController.store);
+routes.put('/recipients/:id', RecipientController.update);
+routes.delete('/recipients/:id', RecipientController.destroy);
 
 export default routes;
